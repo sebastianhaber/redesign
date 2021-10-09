@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5v Redesigned</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script>
+      function toggleMenu() {
+        let menu = document.querySelector("nav ul");
+        let body = document.querySelector("body");
+
+        menu.classList.toggle("active");
+        body.classList.toggle("isMenuOpen");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <img src="assets/logo.png" alt="5v" />
+        <div class="login-wrapper">
+          <input type="text" placeholder="Login" />
+          <input type="password" placeholder="Hasło" />
+          <button type="submit" class="solid">Zaloguj</button>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <img src="assets/logo.png" alt="5v" />
+      <ul class="wrapper">
+        <span
+          id="closeButton"
+          class="iconify"
+          data-icon="eva:arrow-ios-forward-outline"
+          onclick="toggleMenu()"
+        ></span>
+        <li>Oferta</li>
+        <li>Katalog</li>
+        <li>Moje konto</li>
+        <li>Pomoc</li>
+        <li>Artykuły</li>
+        <li>Kontakt</li>
+        <div class="login-wrapper">
+          <input type="text" placeholder="Login" />
+          <input type="password" placeholder="Hasło" />
+          <button type="submit" class="solid">Zaloguj</button>
+        </div>
+      </ul>
+      <span
+        id="hamburgerButton"
+        class="iconify"
+        data-icon="eva:menu-2-fill"
+        onclick="toggleMenu()"
+      ></span>
+    </nav>
+
+    <main>
+      <div id="hero">
+        <div class="wrapper hero">
+          <h1>
+            Załóż <span class="accent">DARMOWY HOSTING</span> lub
+            <span class="accent">ALIAS</span> w ciągu kilku sekund
+          </h1>
+          <div class="hero-search-wrapper">
+            <input type="text" placeholder="Twoja nazwa" />
+            <p>.5v.pl</p>
+            <button class="solid hasBorder" style="margin-left: 3rem">
+              Sprawdź
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="tiles" class="wrapper">
+        <div class="tile">
+          <h1>DARMOWY HOSTING</h1>
+          <ul>
+            <li>
+              aż <span class="accent"><b>3 GB</b></span> na Twoją stronę 💻
+            </li>
+            <li>możliwość podpięcia własnej domeny 💪</li>
+            <li>nieograniczona ilość kont FTP ♾</li>
+            <li>bezpiecny SSL 🔐</li>
+            <li>hotlinkowanie 🔗</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <h1>BEZPŁATNE ALIASY</h1>
+          <ul>
+            <li>atrakcyjna, krótka domena 5v.pl 😎</li>
+            <li>pliki bez limitu rozmiaru 🚫</li>
+            <li>brak nachalnych reklam 🖼</li>
+            <li>phpMyAdmin 🤙</li>
+            <li>bez limitu transferu danych ♾</li>
+          </ul>
+        </div>
+        <div class="register">
+          <p>Przekonaj się jak szybko założysz własne konto</p>
+          <button class="solid">Zarejestruj się</button>
+        </div>
+      </div>
+
+      <div id="blog-posts">
+        <div class="posts wrapper">
+          <div class="post">
+            <div class="image">
+              <img src="https://source.unsplash.com/random" alt="Post" />
+            </div>
+            <div class="post-text">
+              <div class="title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident quae iusto, dolor reprehenderit exercitationem laborum
+                debitis soluta, asperiores sequi fugiat voluptates animi hic?
+                Eum dolorem quam asperiores ex repudiandae magni? Repellat
+                veniam aperiam laudantium facilis beatae quod sequi voluptas rem
+                dignissimos deserunt maiores eius impedit, atque ipsam voluptate
+                nobis amet. Placeat, tempore exercitationem? Veniam
+                reprehenderit sapiente dicta nemo reiciendis in!
+              </p>
+            </div>
+          </div>
+          <div class="post">
+            <div class="image">
+              <img src="https://source.unsplash.com/random" alt="Post" />
+            </div>
+            <div class="post-text">
+              <div class="title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident quae iusto, dolor reprehenderit exercitationem laborum
+                debitis soluta, asperiores sequi fugiat voluptates animi hic?
+                Eum dolorem quam asperiores ex repudiandae magni? Repellat
+                veniam aperiam laudantium facilis beatae quod sequi voluptas rem
+                dignissimos deserunt maiores eius impedit, atque ipsam voluptate
+                nobis amet. Placeat, tempore exercitationem? Veniam
+                reprehenderit sapiente dicta nemo reiciendis in!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="latest">
+        <div class="wrapper">
+          <ul>
+            <b>OSTATNIO ZAREJESTROWANE</b>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+            <li>
+              <div>Lorem.</div>
+            </li>
+          </ul>
+          <div class="statistics">
+            <p>Obecnie obsługujemy <span class="red">30862</span> adresy</p>
+            <p>Ostatio dodanych: <span class="red">48</span></p>
+            <p>Dzisiaj dodanych: <span class="red">0</span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <center>5v Redesign</center>
+      </div>
+    </footer>
+  </body>
+</html>
